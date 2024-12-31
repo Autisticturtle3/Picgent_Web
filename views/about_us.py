@@ -1,17 +1,5 @@
 import streamlit as st
-
-# from forms.contact import contact_form
-
-
-# @st.experimental_dialog("Contact Me")
-# def show_contact_form():
-#     contact_form()
-
-
-# --- HERO SECTION ---
-
-# with col1:
-#     st.image("./assets/profile_image.png", width=230)
+from streamlit_carousel import carousel
 
 st.markdown(
     """
@@ -35,6 +23,31 @@ st.markdown(
 
 st.markdown('<h1 class="centered">Picgent</h1>', unsafe_allow_html=True)
 st.markdown('<p class="centered">Effortlessly search your photo library like never before</p>', unsafe_allow_html=True)
+
+picegent_examples = [
+    dict(
+        title="",
+        text="",
+        img="assets\example1.png",
+    ),
+    dict(
+        title="",
+        text="",
+        img="assets\example2.png",
+    ),
+    dict(
+        title="",
+        text="",
+        img="assets\example3.png",
+    ),
+    dict(
+        title="",
+        text="",
+        img="assets\example4.png",
+    ),
+]
+
+carousel(items=picegent_examples, interval=3000, container_height=1000, width=0.3, controls=False)
 
 col1, col2 = st.columns(2, gap="small", vertical_alignment="top")
 

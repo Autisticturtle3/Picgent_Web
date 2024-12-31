@@ -1,6 +1,5 @@
-## Run the app
-```Powershell
-# vanilla terminal
+# 💻 Python Multi-Page Web App (Streamlit)
+```
 streamlit run streamlit_app.py
 
 # quit
