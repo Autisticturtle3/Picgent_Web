@@ -38,10 +38,10 @@ if submit_button:
         st.stop()
 
     # Prepare the data payload and send it to the specified webhook URL
-    data = {"email": email, "name": name, "message": message}
-    response = requests.post(WEBHOOK_URL, json=data)
+    # data = {"email": email, "name": name, "message": message}
+    # response = requests.post(WEBHOOK_URL, json=data)
 
-    if response.status_code == 200:
-        st.success("Your message has been sent successfully! 🎉", icon="🚀")
-    else:
-        st.error("There was an error sending your message.", icon="😨")
+    # if response.status_code == 200:
+    #     st.success("Your message has been sent successfully! 🎉", icon="🚀")
+    # else:
+    #     st.error("There was an error sending your message.", icon="😨")
