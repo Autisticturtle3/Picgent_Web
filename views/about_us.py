@@ -28,22 +28,22 @@ picegent_examples = [
     dict(
         title="",
         text="",
-        img="assets\example1.png",
+        img="assets/example1.png",
     ),
     dict(
         title="",
         text="",
-        img="assets\example2.png",
+        img="assets/example2.png",
     ),
     dict(
         title="",
         text="",
-        img="assets\example3.png",
+        img="assets/example3.png",
     ),
     dict(
         title="",
         text="",
-        img="assets\example4.png",
+        img="assets/example4.png",
     ),
 ]
 
