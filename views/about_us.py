@@ -1,5 +1,4 @@
 import streamlit as st
-from streamlit_carousel import carousel
 
 st.markdown(
     """
@@ -24,30 +23,13 @@ st.markdown(
 st.markdown('<h1 class="centered">Picgent</h1>', unsafe_allow_html=True)
 st.markdown('<p class="centered">Effortlessly search your photo library like never before</p>', unsafe_allow_html=True)
 
-picegent_examples = [
-    dict(
-        title="",
-        text="",
-        img="assets/example1.png",
-    ),
-    dict(
-        title="",
-        text="",
-        img="assets/example2.png",
-    ),
-    dict(
-        title="",
-        text="",
-        img="assets/example3.png",
-    ),
-    dict(
-        title="",
-        text="",
-        img="assets/example4.png",
-    ),
-]
+DEFAULT_WIDTH = 80
+VIDEO_DATA = "assets/picgentDemo.mp4"
 
-carousel(items=picegent_examples, interval=3000, container_height=1000, width=0.3, controls=False)
+_, container, _ = st.columns([42, 15, 42])
+container.video(data=VIDEO_DATA)
+
+# st.video('assets/picgentDemo.mp4', format="video/mp4", start_time=0, subtitles=None, end_time=None, loop=False, autoplay=False, muted=False)
 
 col1, col2 = st.columns(2, gap="small", vertical_alignment="top")
 
