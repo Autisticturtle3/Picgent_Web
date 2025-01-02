@@ -29,8 +29,6 @@ VIDEO_DATA = "assets/picgentDemo.mp4"
 _, container, _ = st.columns([42, 15, 42])
 container.video(data=VIDEO_DATA)
 
-# st.video('assets/picgentDemo.mp4', format="video/mp4", start_time=0, subtitles=None, end_time=None, loop=False, autoplay=False, muted=False)
-
 col1, col2 = st.columns(2, gap="small", vertical_alignment="top")
 
 with col1:
